@@ -9,7 +9,7 @@ public class ThreadLifeCycle {
         System.out.println(Thread.currentThread().getName() + "  " + thread.getState());
         Thread.sleep(100);
         System.out.println(Thread.currentThread().getName() + "  " + thread.getState());
-        thread.join();
+        thread.join(); //main method will wait for thread to finished
         System.out.println(Thread.currentThread().getName() + "  " + thread.getState());
     }
 }
